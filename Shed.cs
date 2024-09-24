@@ -10,22 +10,22 @@ namespace Shed
     {
         public class Window
         {
-            bool openWindow = false;
+            public bool openWindow = false;
             int winWidth;
             int winHight;
 
 
-            public bool OpenWindow() ///********************************************************
+            public void OpenWindow() ///********************************************************
             {
                 openWindow = true;
-                return true;
+                Console.WriteLine("Window is open");
+                
             }
             public Window()
             {
                 winWidth = 1;
                 winHight = 1;
             }
-            Window window = new Window();
             public int WinWidth
             {
                 get { return winWidth; }
@@ -36,8 +36,8 @@ namespace Shed
                 get { return winHight; }
                 set { winHight = value; }
             }
-        }
-
+        }        
+       
         static int objecNumber = 0;
 
         public int GetObjectNumber()
@@ -56,6 +56,7 @@ namespace Shed
         int height;
         string name = " ";
 
+       
         //property
         public string Name
         {

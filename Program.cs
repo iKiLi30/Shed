@@ -1,6 +1,6 @@
 ﻿namespace Shed
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -45,9 +45,11 @@
 
             myShed.OutResizeAndAddSize(10, out resizeWidth, out resizeHeigth, out resizeLenthwise);
             Console.WriteLine("Size of shed OUT changed at : " + resizeWidth + " " + resizeHeigth + " " + resizeLenthwise);*/
-
+            
             Shed myShed = new Shed();
-            myShed.window.OpenWindow();
+            Shed.Window shedWindow = new Shed.Window();
+            shedWindow.OpenWindow();
+
 
 
         }
